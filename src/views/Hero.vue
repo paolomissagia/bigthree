@@ -23,14 +23,13 @@
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
+              <div>
                 <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
+                  The peak of tennis.
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  This is a simple example of a Landing Page you can build using
-                  Tailwind Starter Kit. It features multiple CSS components
-                  based on the Tailwindcss design system.
+                  The trio who has dominated men's singles tennis for nearly two
+                  decades, collectively winning 65 major singles tournaments;
                 </p>
               </div>
             </div>
@@ -93,11 +92,6 @@
           </div>
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
-              >
-                <i class="fas fa-user-friends text-xl"></i>
-              </div>
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
                 Working with us is a pleasure
               </h3>
@@ -164,9 +158,10 @@
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold">Grand Slams</h2>
               <p class="text-lg leading-relaxed m-4 text-gray-600">
-                According to the National Oceanic and Atmospheric
-                Administration, Ted, Scambos, NSIDClead scentist, puts the
-                potentially record maximum.
+                The Grand Slam tournaments are the world's four most important
+                annual professional tennis tournaments. They offer the most
+                ranking points, prize money, public, media attention and longest
+                matches
               </p>
             </div>
           </div>
@@ -224,9 +219,9 @@
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold text-white">ATP Masters</h2>
               <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                Put the potentially record low maximum sea ice extent tihs year
-                down to low ice. According to the National Oceanic and
-                Atmospheric Administration, Ted, Scambos.
+                The Masters tournaments, along with the Grand Slam tournaments
+                make up the most coveted trophies on the annual ATP Tour
+                calendar.
               </p>
             </div>
           </div>
