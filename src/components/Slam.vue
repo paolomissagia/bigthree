@@ -2,7 +2,7 @@
   <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
     <div class="px-6">
       <img
-        :src="require(`@/assets/images/${image}`)"
+        :src="require(`@/assets/images/slams/${image}`)"
         class="rounded-full max-w-full max-h-[75px] mx-auto"
       />
       <div class="pt-6 text-center">
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "GrandSlamComponent",
+  name: "SlamComponent",
   props: {
     image: String,
     title: String,

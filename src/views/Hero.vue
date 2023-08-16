@@ -61,67 +61,34 @@
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full bg-red-400"
-                  >
-                    <img
-                      class="max-w-[85%]"
-                      src="../assets/icons/roger-federer.svg"
-                    />
-                  </div>
-                  <h6 class="text-xl font-semibold">Roger Federer</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    20 Grand Slam titles. <br />
-                    28 ATP Masters 1000 titles.
-                  </p>
-                </div>
-              </div>
+              <!-- 1 -->
+              <player-component
+                image="roger-federer.svg"
+                title="Roger Federer"
+                slams="20 Grand Slam"
+                masters="28 ATP Masters"
+                color="bronze"
+              ></player-component>
             </div>
             <div class="w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                    <img
-                      class="max-w-[85%]"
-                      src="../assets/icons/novak-djokovic.svg"
-                    />
-                  </div>
-                  <h6 class="text-xl font-semibold">Novak Djokovic</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    23 Grand Slam titles. <br />
-                    38 ATP Masters 1000 titles.
-                  </p>
-                </div>
-              </div>
+              <!-- 2 -->
+              <player-component
+                image="novak-djokovic.svg"
+                title="Novak Djokovic"
+                slams="23 Grand Slam"
+                masters="38 ATP Masters"
+                color="gold"
+              ></player-component>
             </div>
             <div class="md:pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full bg-green-400"
-                  >
-                    <img
-                      class="max-w-[85%]"
-                      src="../assets/icons/rafael-nadal.svg"
-                    />
-                  </div>
-                  <h6 class="text-xl font-semibold">Rafael Nadal</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    22 Grand Slam titles. <br />
-                    36 ATP Masters 1000 titles.
-                  </p>
-                </div>
-              </div>
+              <!-- 3 -->
+              <player-component
+                image="rafael-nadal.svg"
+                title="Rafael Nadal"
+                slams="22 Grand Slam"
+                masters="36 ATP Masters"
+                color="silver"
+              ></player-component>
             </div>
           </div>
           <div class="flex flex-wrap items-center mt-32">
@@ -191,11 +158,11 @@
         </div>
       </section>
       <!-- Page 2 -->
-      <section class="pt-20 pb-48">
+      <section class="pt-24 pb-24">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+              <h2 class="text-4xl font-semibold">Grand Slams</h2>
               <p class="text-lg leading-relaxed m-4 text-gray-600">
                 According to the National Oceanic and Atmospheric
                 Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -205,34 +172,34 @@
           </div>
           <div class="flex flex-wrap">
             <!-- Logo 1 -->
-            <grand-slam-component
+            <slam-component
               image="australian-open.png"
               title="Australian Open"
               number="18"
-            ></grand-slam-component>
+            ></slam-component>
             <!-- 2 -->
-            <grand-slam-component
+            <slam-component
               image="roland-garros.png"
               title="Roland Garros"
               number="18"
-            ></grand-slam-component>
+            ></slam-component>
             <!-- 3 -->
-            <grand-slam-component
+            <slam-component
               image="wimbledon.svg"
               title="Wimbledon"
               number="17"
-            ></grand-slam-component>
+            ></slam-component>
             <!-- 4 -->
-            <grand-slam-component
+            <slam-component
               image="us-open.png"
               title="US Open"
               number="12"
-            ></grand-slam-component>
+            ></slam-component>
           </div>
         </div>
       </section>
       <!-- Page 3 -->
-      <section class="pb-20 relative block bg-gray-900">
+      <section class="pt-24 pb-24 relative block bg-gray-900">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px"
@@ -252,10 +219,10 @@
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-24">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold text-white">Build something</h2>
+              <h2 class="text-4xl font-semibold text-white">ATP Masters</h2>
               <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
                 Put the potentially record low maximum sea ice extent tihs year
                 down to low ice. According to the National Oceanic and
@@ -264,46 +231,60 @@
             </div>
           </div>
           <div class="flex flex-wrap mt-12 justify-center">
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-medal text-xl"></i>
-              </div>
-              <h6 class="text-xl mt-5 font-semibold text-white">
-                Excelent Services
-              </h6>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-poll text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                Grow your market
-              </h5>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-lightbulb text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
+            <!-- 1 -->
+            <master-component
+              image="indian-wells.png"
+              title="Indian Wells"
+              number="13"
+            ></master-component>
+            <!-- 2 -->
+            <master-component
+              image="miami.png"
+              title="Miami"
+              number="15"
+            ></master-component>
+            <!-- 3 -->
+            <master-component
+              image="monte-carlo.png"
+              title="Monte-Carlo"
+              number="17"
+            ></master-component>
+            <!-- 4 -->
+            <master-component
+              image="madrid.png"
+              title="Madrid"
+              number="13"
+            ></master-component>
+            <!-- 5 -->
+            <master-component
+              image="italian.png"
+              title="Italian"
+              number="20"
+            ></master-component>
+            <!-- 6 -->
+            <master-component
+              image="canadian.png"
+              title="Canadian"
+              number="11"
+            ></master-component>
+            <!-- 7 -->
+            <master-component
+              image="cincinnati.png"
+              title="Cincinnati"
+              number="10"
+            ></master-component>
+            <!-- 8 -->
+            <master-component
+              image="shanghai.png"
+              title="Shanghai"
+              number="8"
+            ></master-component>
+            <!-- 9 -->
+            <master-component
+              image="paris.png"
+              title="Paris"
+              number="8"
+            ></master-component>
           </div>
         </div>
       </section>
@@ -316,14 +297,18 @@
 <script>
 import NavbarComponent from "../components/Navbar.vue";
 import FooterComponent from "../components/Footer.vue";
-import GrandSlamComponent from "../components/GrandSlam.vue";
+import SlamComponent from "../components/Slam.vue";
+import MasterComponent from "../components/Master.vue";
+import PlayerComponent from "../components/Player.vue";
 
 export default {
   name: "HeroView",
   components: {
     NavbarComponent,
     FooterComponent,
-    GrandSlamComponent,
+    SlamComponent,
+    MasterComponent,
+    PlayerComponent,
   },
 };
 </script>
