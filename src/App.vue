@@ -1,14 +1,14 @@
 <template>
-  <HeroPage />
+  <HeroView />
 </template>
 
 <script>
-import HeroPage from "./pages/HeroPage.vue";
+import HeroView from "./views/Hero.vue";
 
 export default {
   name: "App",
   components: {
-    HeroPage,
+    HeroView,
   },
 };
 </script>
