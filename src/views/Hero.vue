@@ -59,8 +59,10 @@
       <section class="pb-20 bg-gray-300 -mt-24">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
-            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <!-- 1 -->
+            <!-- 1 -->
+            <div
+              class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center order-3 md:-order-none"
+            >
               <player-component
                 image="roger-federer.svg"
                 title="Roger Federer"
@@ -69,8 +71,10 @@
                 color="bronze"
               ></player-component>
             </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <!-- 2 -->
+            <!-- 2 -->
+            <div
+              class="w-full md:w-4/12 px-4 text-center order-1 md:order-none"
+            >
               <player-component
                 image="novak-djokovic.svg"
                 title="Novak Djokovic"
@@ -79,8 +83,10 @@
                 color="gold"
               ></player-component>
             </div>
-            <div class="md:pt-6 w-full md:w-4/12 px-4 text-center">
-              <!-- 3 -->
+            <!-- 3 -->
+            <div
+              class="md:pt-6 w-full md:w-4/12 px-4 text-center order-2 md:order-none"
+            >
               <player-component
                 image="rafael-nadal.svg"
                 title="Rafael Nadal"
