@@ -1,9 +1,11 @@
 <template>
   <navbar-component />
-  <HeroView />
-  <PlayersView />
-  <SlamsView />
-  <MastersView />
+  <main>
+    <HeroView />
+    <PlayersView />
+    <SlamsView />
+    <MastersView />
+  </main>
   <footer-component />
 </template>
 
