@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Australian Open",
+    "number": 18,
+    "image": "australian-open.png"
+  },
+  {
+    "id": 2,
+    "name": "Roland Garros",
+    "number": 18,
+    "image": "roland-garros.png"
+  },
+  {
+    "id": 3,
+    "name": "Wimbledon",
+    "number": 17,
+    "image": "wimbledon.svg"
+  },
+  {
+    "id": 4,
+    "name": "US Open",
+    "number": 12,
+    "image": "us-open.png"
+  }
+]
