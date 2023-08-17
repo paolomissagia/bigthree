@@ -11,10 +11,34 @@
           :src="require(`@/assets/images/players/${image}`)"
         />
       </div>
-      <h6 class="text-xl font-semibold">{{ title }}</h6>
-      <p class="mt-2 mb-4 text-gray-600">
-        {{ slams }} <br />
-        {{ masters }}
+      <h6 class="text-2xl font-semibold">{{ title }}</h6>
+      <p class="text-xl mt-2 mb-4 text-gray-600">
+        <vue3-autocounter
+          ref="counter"
+          :startAmount="0"
+          :endAmount="slams"
+          :duration="3"
+          prefix=""
+          suffix=""
+          separator=""
+          decimalSeparator=""
+          :decimals="0"
+          :autoinit="true"
+        />
+        Grand Slams <br />
+        <vue3-autocounter
+          ref="counter"
+          :startAmount="0"
+          :endAmount="masters"
+          :duration="3"
+          prefix=""
+          suffix=""
+          separator=""
+          decimalSeparator=""
+          :decimals="0"
+          :autoinit="true"
+        />
+        ATP Masters
       </p>
     </div>
   </div>
@@ -25,8 +49,8 @@ export default {
   props: {
     image: String,
     title: String,
-    slams: String,
-    masters: String,
+    slams: Number,
+    masters: Number,
     color: String,
   },
 };
