@@ -6,7 +6,7 @@
       <img :src="require(`@/assets/images/masters/${image}`)" />
     </div>
     <h6 class="text-xl mt-5 font-semibold text-white">{{ title }}</h6>
-    <p class="mt-2 mb-4 text-gray-500">
+    <p class="text-md mt-2 mb-4 text-gray-500">
       {{ number }}
     </p>
   </div>

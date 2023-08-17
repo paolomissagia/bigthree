@@ -7,7 +7,7 @@
       />
       <div class="pt-6 text-center">
         <h5 class="text-xl font-bold">{{ title }}</h5>
-        <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+        <p class="mt-1 text-md text-gray-500 uppercase font-semibold">
           {{ number }}
         </p>
       </div>
