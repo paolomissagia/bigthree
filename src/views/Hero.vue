@@ -97,7 +97,7 @@
             </div>
           </div>
           <div class="flex flex-wrap items-center mt-32">
-            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto text-center">
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
                 Dominance of the Big Three
               </h3>
