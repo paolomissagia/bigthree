@@ -66,8 +66,8 @@
               <player-component
                 image="roger-federer.svg"
                 title="Roger Federer"
-                slams="20 Grand Slam"
-                masters="28 ATP Masters"
+                :slams="20"
+                :masters="28"
                 color="bronze"
               ></player-component>
             </div>
@@ -78,8 +78,8 @@
               <player-component
                 image="novak-djokovic.svg"
                 title="Novak Djokovic"
-                slams="23 Grand Slam"
-                masters="38 ATP Masters"
+                :slams="23"
+                :masters="38"
                 color="gold"
               ></player-component>
             </div>
@@ -90,8 +90,8 @@
               <player-component
                 image="rafael-nadal.svg"
                 title="Rafael Nadal"
-                slams="22 Grand Slam"
-                masters="36 ATP Masters"
+                :slams="22"
+                :masters="36"
                 color="silver"
               ></player-component>
             </div>
@@ -142,25 +142,25 @@
             <slam-component
               image="australian-open.png"
               title="Australian Open"
-              number="18"
+              :number="18"
             ></slam-component>
             <!-- 2 -->
             <slam-component
               image="roland-garros.png"
               title="Roland Garros"
-              number="18"
+              :number="18"
             ></slam-component>
             <!-- 3 -->
             <slam-component
               image="wimbledon.svg"
               title="Wimbledon"
-              number="17"
+              :number="17"
             ></slam-component>
             <!-- 4 -->
             <slam-component
               image="us-open.png"
               title="US Open"
-              number="12"
+              :number="12"
             ></slam-component>
           </div>
         </div>
@@ -202,55 +202,55 @@
             <master-component
               image="indian-wells.png"
               title="Indian Wells"
-              number="13"
+              :number="13"
             ></master-component>
             <!-- 2 -->
             <master-component
               image="miami.png"
               title="Miami"
-              number="15"
+              :number="15"
             ></master-component>
             <!-- 3 -->
             <master-component
               image="monte-carlo.png"
               title="Monte-Carlo"
-              number="17"
+              :number="17"
             ></master-component>
             <!-- 4 -->
             <master-component
               image="madrid.png"
               title="Madrid"
-              number="13"
+              :number="13"
             ></master-component>
             <!-- 5 -->
             <master-component
               image="italian.png"
               title="Italian"
-              number="20"
+              :number="20"
             ></master-component>
             <!-- 6 -->
             <master-component
               image="canadian.png"
               title="Canadian"
-              number="11"
+              :number="11"
             ></master-component>
             <!-- 7 -->
             <master-component
               image="cincinnati.png"
               title="Cincinnati"
-              number="10"
+              :number="10"
             ></master-component>
             <!-- 8 -->
             <master-component
               image="shanghai.png"
               title="Shanghai"
-              number="8"
+              :number="8"
             ></master-component>
             <!-- 9 -->
             <master-component
               image="paris.png"
               title="Paris"
-              number="8"
+              :number="8"
             ></master-component>
           </div>
         </div>
