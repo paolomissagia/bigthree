@@ -31,7 +31,7 @@
       </div>
       <div class="flex flex-wrap mt-12 justify-center">
         <!-- 1 -->
-        <template v-for="master in masters" :key="master.id">
+        <template v-for="master in mastersData" :key="master.id">
           <master-component
             :title="master.name"
             :number="master.number"
@@ -43,8 +43,8 @@
   </section>
 </template>
 <script>
+import axios from "axios";
 import MasterComponent from "../components/Master.vue";
-import mastersData from "../data/masters.json";
 
 export default {
   name: "MastersView",
@@ -53,8 +53,23 @@ export default {
   },
   data() {
     return {
-      masters: mastersData,
+      mastersData: [],
     };
+  },
+  methods: {
+    async getData() {
+      try {
+        const response = await axios.get(
+          "https://bigthree-backend.onrender.com/api/v1/atpmasters/all"
+        );
+        this.mastersData = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
+  mounted() {
+    this.getData();
   },
 };
 </script>
