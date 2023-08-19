@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap">
         <!-- 1 -->
-        <template v-for="player in players" :key="player.id">
+        <template v-for="player in playersData" :key="player.id">
           <div :class="getClass(player.id)">
             <player-component
               :title="player.name"
@@ -43,8 +43,8 @@
 </template>
 
 <script>
+import axios from "axios";
 import PlayerComponent from "../components/Player.vue";
-import playersData from "../data/players.json";
 
 export default {
   name: "PlayersView",
@@ -53,19 +53,31 @@ export default {
   },
   data() {
     return {
-      players: playersData,
+      playersData: [],
     };
   },
   methods: {
     getClass(id) {
       return {
-        "w-full md:w-4/12 px-4 text-center order-1 md:order-none": id == 1,
-        "md:pt-6 w-full md:w-4/12 px-4 text-center order-2 md:order-none":
-          id == 2,
-        "lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center order-3 md:-order-none":
+        "w-full md:w-4/12 px-4 text-center order-1 md:order-2": id == 1,
+        "md:pt-6 w-full md:w-4/12 px-4 text-center order-2 md:order-3": id == 2,
+        "lg:pt-12 md:pt-6 w-full md:w-4/12 px-4 text-center order-3 md:-order-1":
           id == 3,
       };
     },
+    async getData() {
+      try {
+        const response = await axios.get(
+          "https://bigthree-backend.onrender.com/api/v1/tennisplayers/all"
+        );
+        this.playersData = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
+  mounted() {
+    this.getData();
   },
 };
 </script>
