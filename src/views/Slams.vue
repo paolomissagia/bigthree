@@ -15,7 +15,7 @@
         <template v-for="slam in slamsData" :key="slam.id">
           <slam-component
             :title="slam.name"
-            :number="slam.number"
+            :number="slam.total"
             :image="slam.image"
           />
         </template>
@@ -25,7 +25,7 @@
 </template>
 <script>
 import SlamComponent from "../components/Slam.vue";
-import axios from "axios";
+import grandSlams from "@/assets/data/GrandSlams";
 
 export default {
   name: "SlamsView",
@@ -34,23 +34,8 @@ export default {
   },
   data() {
     return {
-      slamsData: [],
+      slamsData: grandSlams,
     };
-  },
-  methods: {
-    async getData() {
-      try {
-        const response = await axios.get(
-          "https://bigthree-backend.onrender.com/api/v1/grandslams/all"
-        );
-        this.slamsData = response.data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
-  created() {
-    this.getData();
   },
 };
 </script>

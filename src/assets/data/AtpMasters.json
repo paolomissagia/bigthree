@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Indian Wells",
+    "total": 13,
+    "image": "indian-wells.png"
+  },
+  {
+    "id": 2,
+    "name": "Miami",
+    "total": 15,
+    "image": "miami.png"
+  },
+  {
+    "id": 3,
+    "name": "Monte Carlo",
+    "total": 17,
+    "image": "monte-carlo.png"
+  },
+  {
+    "id": 4,
+    "name": "Madrid",
+    "total": 13,
+    "image": "madrid.png"
+  },
+  {
+    "id": 5,
+    "name": "Italian",
+    "total": 20,
+    "image": "italian.png"
+  },
+  {
+    "id": 6,
+    "name": "Canadian",
+    "total": 11,
+    "image": "canadian.png"
+  },
+  {
+    "id": 7,
+    "name": "Cincinnati",
+    "total": 10,
+    "image": "cincinnati.png"
+  },
+  {
+    "id": 8,
+    "name": "Shanghai",
+    "total": 8,
+    "image": "shanghai.png"
+  },
+  {
+    "id": 9,
+    "name": "Paris",
+    "total": 8,
+    "image": "paris.png"
+  }
+]
