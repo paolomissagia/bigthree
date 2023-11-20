@@ -43,8 +43,8 @@
 </template>
 
 <script>
-import axios from "axios";
 import PlayerComponent from "../components/Player.vue";
+import tennisPlayers from "@/assets/data/TennisPlayers";
 
 export default {
   name: "PlayersView",
@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      playersData: [],
+      playersData: tennisPlayers,
     };
   },
   methods: {
@@ -65,19 +65,6 @@ export default {
           id == 3,
       };
     },
-    async getData() {
-      try {
-        const response = await axios.get(
-          "https://bigthree-backend.onrender.com/api/v1/tennisplayers/all"
-        );
-        this.playersData = response.data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
-  created() {
-    this.getData();
   },
 };
 </script>

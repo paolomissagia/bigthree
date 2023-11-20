@@ -34,7 +34,7 @@
         <template v-for="master in mastersData" :key="master.id">
           <master-component
             :title="master.name"
-            :number="master.number"
+            :number="master.total"
             :image="master.image"
           />
         </template>
@@ -43,8 +43,8 @@
   </section>
 </template>
 <script>
-import axios from "axios";
 import MasterComponent from "../components/Master.vue";
+import atpMasters from "@/assets/data/AtpMasters";
 
 export default {
   name: "MastersView",
@@ -53,23 +53,8 @@ export default {
   },
   data() {
     return {
-      mastersData: [],
+      mastersData: atpMasters,
     };
-  },
-  methods: {
-    async getData() {
-      try {
-        const response = await axios.get(
-          "https://bigthree-backend.onrender.com/api/v1/atpmasters/all"
-        );
-        this.mastersData = response.data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
-  created() {
-    this.getData();
   },
 };
 </script>
